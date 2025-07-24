@@ -11,8 +11,7 @@
   align-items: center;
   justify-items: center;
   min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
+  padding: 0 20px;
   font-family: var(--font-geist-sans);
 }
 
@@ -32,20 +31,6 @@
   flex-direction: column;
   gap: 32px;
   grid-row-start: 2;
-}
-
-.main ol {
-  font-family: var(--font-geist-mono);
-  padding-left: 0;
-  margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  list-style-position: inside;
-}
-
-.main li:not(:last-of-type) {
-  margin-bottom: 8px;
 }
 
 .main code {
@@ -113,6 +98,11 @@ a.secondary {
   flex-shrink: 0;
 }
 
+.content {
+  margin: 2px 0;
+  padding-left: 7px;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
@@ -142,10 +132,6 @@ a.secondary {
 
   .main {
     align-items: center;
-  }
-
-  .main ol {
-    text-align: center;
   }
 
   .ctas {

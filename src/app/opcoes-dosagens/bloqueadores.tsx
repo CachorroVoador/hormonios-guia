@@ -1,3 +1,5 @@
+import styles from "../layout.module.css";
+
 function ExameSangueAviso(props: {bloqueador: string}){
 	return (
 		<>
@@ -10,7 +12,7 @@ function ExameSangueAviso(props: {bloqueador: string}){
 
 function AcetatoCipro(){
 	return (
-		<div className='content'>
+		<div className={styles.content}>
 			<h3>Acetato de Ciproterona</h3>
 			<ul>
 				<li>12.5mg por dia.</li>
@@ -40,7 +42,7 @@ function AcetatoCipro(){
 
 function Espironolactona(){
 	return (
-		<div className='content'>
+		<div className={styles.content}>
 		<h3>Espironolactona</h3>
 		<ul><li>Entre 100mg e 200mg por dia.</li></ul>
 		<p>
@@ -59,7 +61,7 @@ function Espironolactona(){
 
 function Bicalutamida(){
 	return (
-		<div className='content'>
+		<div className={styles.content}>
 		<h3>Bicalutamida</h3>
 		<ul><li>50mg por dia.</li></ul>
 		<p>

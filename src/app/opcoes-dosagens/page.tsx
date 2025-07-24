@@ -1,4 +1,4 @@
-import styles from "../page.module.css";
+import styles from "../layout.module.css";
 import Dosagens from "./dosagens";
 import Medicamentos from "./medicamentos";
 

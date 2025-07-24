@@ -18,6 +18,7 @@ body {
 ul, ol {
   list-style-position: outside;
   padding-left: 1.5rem;
+  text-align: left;
 }
 
 * {
@@ -32,14 +33,20 @@ ul, ol {
 
 p {
   padding: 6px 0;
+  text-align: left;
+}
+
+table {
+  margin: 10px 0;
 }
 
 table, th, td {
   border: 1px solid rgb(97, 97, 97);
 }
-
-.content {
-  margin: 2px 0;
+td, th {
+  font-size: 1.2vw;
+  padding: 0 10px;
+  text-align: justify;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -152,3 +159,4 @@ table, th, td {
   }
 
 }
+

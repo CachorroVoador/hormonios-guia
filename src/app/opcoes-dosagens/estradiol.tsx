@@ -1,9 +1,10 @@
 import Image from "next/image";
+import styles from "../layout.module.css";
 
 
 function Oral(){
 	return (
-		<div className='content'>
+		<div className={styles.content}>
 		<h3>Oral</h3>
 		<ul><li>Entre 4mg e 8mg de estradiol por dia + Bloqueador de testosterona.</li></ul>
 		<p>
@@ -25,7 +26,7 @@ function Oral(){
 
 function Adesivo(){
 	return (
-		<div className='content'>
+		<div className={styles.content}>
 		<h3>Adesivo</h3>
 		<ul><li>Entre 100μg e 400μg por dia + Bloqueador de Testosterona.</li></ul>
 		<p>
@@ -48,7 +49,7 @@ function Adesivo(){
 
 function Gel(){
 	return (
-		<div className='content'>
+		<div className={styles.content}>
 		<h3>Gel</h3>
 		<ul><li>Entre 3mg e 6mg por dia + Bloqueador de Testosterona.</li></ul>
 
@@ -88,7 +89,7 @@ function Gel(){
 
 function Injecao(){
 	return (
-		<div className='content'>
+		<div className={styles.content}>
 		<h3>Injeção IM (Intramuscular)</h3>
 		<ul>
 			<li>

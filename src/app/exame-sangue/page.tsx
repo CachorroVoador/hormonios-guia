@@ -1,4 +1,4 @@
-import styles from '../page.module.css'
+import styles from '../layout.module.css'
 
 function Acetato(){
 	const exames = [
@@ -8,8 +8,9 @@ function Acetato(){
 		"Albumina"
 	]
 	return (
-		<div className='content'>
+		<div className={styles.content}>
 			<h2>Acetato de Ciproterona</h2>
+			<div className={styles.content}>
 			<p>
 			O Acetato de Ciproterona, em casos raros, pode ser tóxico para o seu fígado.
 			</p>
@@ -19,6 +20,7 @@ function Acetato(){
 			<p>
 			Além disso, outro efeito da Ciproterona é o aumento da Prolactina no sangue. Isso por si só não é um problema (quando tomado na dose certa de 12.5mg/dia), mas se você tomar algum outro remédio que também aumenta a prolactina, como a maioria dos antidepressivos, antipsicóticos e ansiolíticos (Rivotril / Clonazepam), o efeito pode se acumular e gerar um problema. Caso você tome algum desses tipos de remédio diariamente, pesquise na internet se o seu medicamento é conehcido por aumentar a Prolactina. Se for, é melhor evitar a Ciproterona e escolher outro bloqueador.
 			</p>
+			</div>
 
 			<Exames exames={exames}/>
 		</div>
@@ -35,23 +37,25 @@ function Espironolactona(){
 		"TFGe"
 	]
 	return (
-		<div className='content'>
+		<div className={styles.content}>
 			<h2>
 			Espironolactona
 			</h2>
-			<p>
-			A Espironolactona, além dos efeitos antiandrogênicos (bloqueador de Testosterona), também causa:
-			</p>
-			<ul>
-				<li>Aumento da liberação de sódio na urina (Seu corpo perde mais sódio que o normal)</li>
-				<li>Retenção de Potássio (Acumulando mais potássio que o normal)</li>
-			</ul>
-			<p>
-			Se você tiver escolhido Espironolactona como seu bloqueador, evite exagerar em alimentos ricos em potássio. Ao mesmo tempo, busque sempre se hidratar!
-			</p>
-			<p>
-			Se você ou algum parente próximo sofre com hipercalemia ou problemas nos rins, evite tomar Espironolactona.
-			</p>
+			<div className={styles.content}>
+				<p>
+				A Espironolactona, além dos efeitos antiandrogênicos (bloqueador de Testosterona), também causa:
+				</p>
+				<ul>
+					<li>Aumento da liberação de sódio na urina (Seu corpo perde mais sódio que o normal)</li>
+					<li>Retenção de Potássio (Acumulando mais potássio que o normal)</li>
+				</ul>
+				<p>
+				Se você tiver escolhido Espironolactona como seu bloqueador, evite exagerar em alimentos ricos em potássio. Ao mesmo tempo, busque sempre se hidratar!
+				</p>
+				<p>
+				Se você ou algum parente próximo sofre com hipercalemia ou problemas nos rins, evite tomar Espironolactona.
+				</p>
+			</div>
 
 			<Exames exames={exames}/>
 		</div>
@@ -66,12 +70,14 @@ function Bicalutamida(){
 			<h2>
 			Bicalutamida
 			</h2>
+			<div className={styles.content}>
 			<p>
 			Lembrando que a Bicalutamida age nos <strong>receptores</strong> de Testosterona, não na produção. Por isso, espere ver níveis altos de Testosterona nos seus exames! É normal e significa que ela está funcionando.
 			</p>
 			<p>
 			Evite usar Bicalutamida se você tiver Cirrose ou Hepatite.
 			</p>
+			</div>
 			<Exames exames={exames}/>
 
 		</div>
@@ -82,25 +88,29 @@ function Exames(props: {exames: Array<string>}){
 	return (
 		<>
 		<h3>Exames:</h3>
+		<div className={styles.content}>
 		<ul>
 			{props.exames.map((value: string) => (
 				<li key={value}>{value}</li>
 			))}
 		</ul>
+		</div>
 		</>
 	)
 }
 
 function Bloqueadores(){
 	return (
-		<div className='content'>
+		<div className={styles.content}>
 			<h2>Bloqueadores</h2>
+			<div className={styles.content}>
 			<p>
 			Dependendo do bloqueador que você escolher, os exames de sangue são diferentes! (além de Estradiol e Testosterona total para todos os casos)
 			</p>
 			<p>
 			Lembrando que, para TH injetável, <strong>NÃO é necessário</strong> tomar bloqueador de testosterona. Tomar um bloqueador sem necessidade aumenta os riscos de efeitos adversos. Por favor siga essa instrução, mesmo que um endocrinologista ou amigo/a &quot;experiente&quot; te diga o contrário.
 			</p>
+			</div>
 		</div>
 	)
 }

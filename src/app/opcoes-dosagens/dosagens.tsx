@@ -1,9 +1,11 @@
 import Bloqueadores from "./bloqueadores";
 import Estradiol from "./estradiol";
+import styles from "../layout.module.css";
+
 
 function NiveisDeEstradiol(){
 	return (
-		<div className='content'>
+		<div className={styles.content}>
 		<p>
 		De acordo com o SoC 8, os níveis ideais de Estradiol e Testosterona para os melhores resultados, sem correr riscos desnecessários são:
 		</p>
@@ -19,7 +21,7 @@ function NiveisDeEstradiol(){
 
 function NaoFeminizaMaisMenos(){
 	return (
-		<div className='content'>
+		<div className={styles.content}>
 		<h3>
 		Não existe medicamento que feminiza mais ou feminiza menos:
 		</h3>
@@ -43,7 +45,7 @@ function Referencias(){
 		'Fase equivalente do ciclo menstrual': ['Folicular', 'Ciclo inteiro', 'Lútea', 'Ovulação']
 	  };
 	return (
-		<div className='content'>
+		<div className={styles.content}>
 		<p>
 		As dosagens listadas aqui são referenciadas de uma tabela do Transfemscience. Mais informações sobre esse site estarão no capítulo de referências.
 		</p>

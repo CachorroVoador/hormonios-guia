@@ -1,6 +1,9 @@
+import styles from "../layout.module.css";
+
+
 function BloqueadoresTestosterona() {
 	return (
-	  <div className='content'>
+	  <div className={styles.content}>
 		<h3>Bloqueadores de Testosterona</h3>
 		<p>
 		  No brasil, temos duas opções de bloqueadores de testosterona
@@ -16,7 +19,7 @@ function BloqueadoresTestosterona() {
   
   function Oral() {
 	return (
-	  <div className='content'>
+	  <div className={styles.content}>
 		<h3>Oral</h3>
 		<p>Alguns medicamentos disponíveis no Brasil para TH Oral:</p>
 		<ul>
@@ -43,7 +46,7 @@ function BloqueadoresTestosterona() {
   
   function Gel() {
 	return (
-	  <div className='content'>
+	  <div className={styles.content}>
 		<h3>Transdermal (Adesivos)</h3>
 		<p>Opções para adesivos de estradiol:</p>
 		<ul>
@@ -64,7 +67,7 @@ function BloqueadoresTestosterona() {
   
   function Injetavel() {
 	return (
-	  <div className='content'>
+	  <div className={styles.content}>
 		<p>
 		  Só há uma opção de medicamento injetável disponível nas farmácias
 		  brasileiras:
