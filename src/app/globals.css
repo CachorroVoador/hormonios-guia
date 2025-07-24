@@ -48,6 +48,23 @@ td, th {
   text-align: justify;
 }
 
+iframe {
+  width: 80vw;
+  max-width: 560px;
+}
+
+@media (max-width: 929px) {
+  td, th{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  td, th {
+    font-size: 3vw;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
