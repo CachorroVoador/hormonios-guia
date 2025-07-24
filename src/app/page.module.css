@@ -80,6 +80,12 @@
   font-weight: 500;
 }
 
+.inline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 a.primary {
   background: var(--foreground);
   color: var(--background);
@@ -124,6 +130,9 @@ a.secondary {
     text-underline-offset: 4px;
   }
 }
+
+
+
 
 @media (max-width: 600px) {
   .page {
