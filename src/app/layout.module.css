@@ -29,7 +29,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 4px;
   grid-row-start: 2;
 }
 
@@ -99,7 +99,6 @@ a.secondary {
 }
 
 .content {
-  margin: 2px 0;
   padding-left: 7px;
 }
 

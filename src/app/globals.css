@@ -27,12 +27,9 @@ ul, ol {
   margin: 0;
 }
 
-.sidebar-list {
-  color: rgb(255, 255, 255);
-}
 
 p {
-  padding: 6px 0;
+  margin: 10px 0;
   text-align: left;
 }
 
@@ -43,26 +40,15 @@ table {
 table, th, td {
   border: 1px solid rgb(97, 97, 97);
 }
+
 td, th {
-  font-size: 1.4vw;
+  font-size: 14px;
   text-align: justify;
 }
 
 iframe {
   width: 80vw;
   max-width: 560px;
-}
-
-@media (max-width: 929px) {
-  td, th{
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 480px) {
-  td, th {
-    font-size: 3vw;
-  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -164,7 +150,7 @@ iframe {
     font-weight: 600;
   }
   a {
-    color: rgb(150, 44, 202);
+    color: #e93cff;
     text-decoration: none;
   }
   ul {

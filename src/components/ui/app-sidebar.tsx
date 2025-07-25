@@ -7,6 +7,8 @@ import {
   SidebarMenuItem,
 } from "./sidebar";
 
+import styles from './components.module.css'
+
 const menuItems = [
   {
     title: "Introdução",
@@ -38,7 +40,7 @@ export default function AppSidebar() {
           {menuItems.map((item) => (
             <SidebarMenuItem key={item.title}>
               <SidebarMenuButton asChild>
-                <a href={item.url} className="sidebar-list">
+                <a href={item.url} className={styles.sidebarlist}>
                   <span>{item.title}</span>
                 </a>
               </SidebarMenuButton>

@@ -90,7 +90,6 @@ export default function Medicamentos() {
 	return (
 	  <section id="medicamentos">
 		<h2>Medicamentos: </h2>
-		<br />
 		<BloqueadoresTestosterona />
 		<Oral />
 		<Gel />
