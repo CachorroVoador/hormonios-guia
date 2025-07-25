@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Guia de terapia hormonal",
-  description: "Me dê ideias do que por aqui!!",
+  description: "Guia de TH para mulheres trans",
 };
 
 export default function RootLayout({
